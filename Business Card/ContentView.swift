@@ -37,38 +37,8 @@ struct ContentView: View {
                 Divider()
                     .frame(width: 1.0, height: 50.0, alignment: .center)
                
-                    RoundedRectangle(cornerRadius: UIScreen.screenHeight / 5)
-                        .fill(Color(
-                            red: 0.70,
-                            green: 0.75,
-                            blue: 0.76,
-                            opacity: 1.00))
-                        .frame(width: (UIScreen.screenWidth - 25.0), height: 40.0, alignment: .center)
-                        .overlay(HStack {
-                            Image(systemName: "phone.fill")
-                                .foregroundColor(.red)
-                                Text("Phone: 123-456-7890")
-                                .frame(width: 300.0, height: 20.0, alignment: .leading)
-                        })
-                .frame(width: UIScreen.screenWidth, height: 50.0, alignment: .center)
-                RoundedRectangle(cornerRadius: UIScreen.screenHeight / 5)
-                    .fill(Color(
-                        red: 0.70,
-                        green: 0.75,
-                        blue: 0.76,
-                        opacity: 1.00))
-                    .frame(width: (UIScreen.screenWidth - 25.0), height: 40.0, alignment: .center)
-                    .overlay(HStack {
-                        Image(systemName: "envelope")
-                            .foregroundColor(.red)
-                        
-                        Text(verbatim: "Email: myemail@gmail.com")
-                            .frame(width: 300.0, height: 20.0, alignment: .leading)
-                    }
-                        
-                
-                  
-                
+                InfoView(symbol: "phone.fill", infoText: "Phone: 123-456-7890")              
+                InfoView(symbol: "envelope", infoText: "Email: myemail@gmail.com")
             }
         }
     }
@@ -85,3 +55,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

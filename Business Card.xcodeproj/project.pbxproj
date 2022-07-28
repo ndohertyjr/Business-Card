@@ -17,6 +17,9 @@
 		3F707A0D2892DA7200E48ECC /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F707A0C2892DA7200E48ECC /* Satisfy-Regular.ttf */; };
 		3F707A0E2892DA7200E48ECC /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F707A0C2892DA7200E48ECC /* Satisfy-Regular.ttf */; };
 		3F707A0F2892DA7200E48ECC /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F707A0C2892DA7200E48ECC /* Satisfy-Regular.ttf */; };
+		3F707A172892EC8700E48ECC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F707A162892EC8700E48ECC /* InfoView.swift */; };
+		3F707A182892EC8700E48ECC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F707A162892EC8700E48ECC /* InfoView.swift */; };
+		3F707A192892EC8700E48ECC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F707A162892EC8700E48ECC /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		3F7079FE2892D7FC00E48ECC /* Business_CardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business_CardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F707A0C2892DA7200E48ECC /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satisfy-Regular.ttf"; sourceTree = "<group>"; };
 		3F707A152892DBFE00E48ECC /* Business-Card-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Business-Card-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3F707A162892EC8700E48ECC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				3F7079E32892D7FA00E48ECC /* ContentView.swift */,
 				3F7079E52892D7FC00E48ECC /* Assets.xcassets */,
 				3F7079E72892D7FC00E48ECC /* Preview Content */,
+				3F707A162892EC8700E48ECC /* InfoView.swift */,
 			);
 			path = "Business Card";
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7079E42892D7FA00E48ECC /* ContentView.swift in Sources */,
+				3F707A172892EC8700E48ECC /* InfoView.swift in Sources */,
 				3F7079E22892D7FA00E48ECC /* Business_CardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F707A182892EC8700E48ECC /* InfoView.swift in Sources */,
 				3F7079F32892D7FC00E48ECC /* Business_CardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7079FF2892D7FC00E48ECC /* Business_CardUITestsLaunchTests.swift in Sources */,
+				3F707A192892EC8700E48ECC /* InfoView.swift in Sources */,
 				3F7079FD2892D7FC00E48ECC /* Business_CardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
