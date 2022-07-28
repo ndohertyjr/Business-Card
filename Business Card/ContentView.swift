@@ -9,9 +9,64 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack {
+            Color(red: 0.51, green: 0.93, blue: 0.93, opacity: 1.00)
+                .ignoresSafeArea()
+            VStack {
+                Image("neil")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150.0, height: 150.0, alignment: .center)
+                    .clipShape(Circle())
+                    .overlay(Circle()
+                        .stroke(
+                            Color(
+                                red: 0.70,
+                                green: 0.75,
+                                blue: 0.76,
+                                opacity: 1.00),
+                            lineWidth: 5))
+                Text("Neil Doherty")
+                    .font(Font.custom("Satisfy-Regular", size: 50))
+                    .bold()
+                
+                Text("Application Development Engineer")
+                    .foregroundColor(Color(red: 0.18, green: 0.20, blue: 0.21))
+                    .font(.system(size: 22))
+                Divider()
+                    .frame(width: 1.0, height: 50.0, alignment: .center)
+                    Text("Phone: 908-670-5090")
+                        .frame(width: 200.0, height: 20.0, alignment: .center)
+                        .background(RoundedRectangle(cornerRadius: UIScreen.screenHeight / 5)
+                            .fill(Color(
+                                red: 0.70,
+                                green: 0.75,
+                                blue: 0.76,
+                                opacity: 1.00))
+                            .frame(width: (UIScreen.screenWidth - 25.0), height: 40.0, alignment: .center)
+                            
+                        )
+                        .padding()
+                Text(verbatim: "Email: ndohertyjr@gmail.com")
+                    .frame(width: (UIScreen.screenWidth), height: 20.0, alignment: .center)
+                    .background(RoundedRectangle(cornerRadius: UIScreen.screenHeight / 5)
+                        .fill(Color(
+                            red: 0.70,
+                            green: 0.75,
+                            blue: 0.76,
+                            opacity: 1.00))
+                        .frame(width: (UIScreen.screenWidth - 25.0), height: 40.0, alignment: .center)
+                    )
+            }
+        }
     }
+}
+
+extension UIScreen {
+    static let screenWidth = UIScreen.main.bounds.size.width
+    static let screenHeight = UIScreen.main.bounds.size.height
+    static let screenSize = UIScreen.main.bounds.size
 }
 
 struct ContentView_Previews: PreviewProvider {
