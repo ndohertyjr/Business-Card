@@ -36,7 +36,7 @@ struct ContentView: View {
                     .font(.system(size: 22))
                 Divider()
                     .frame(width: 1.0, height: 50.0, alignment: .center)
-                    Text("Phone: 908-670-5090")
+                    Text("Phone: 123-456-7890")
                         .frame(width: 200.0, height: 20.0, alignment: .center)
                         .background(RoundedRectangle(cornerRadius: UIScreen.screenHeight / 5)
                             .fill(Color(
@@ -48,7 +48,7 @@ struct ContentView: View {
                             
                         )
                         .padding()
-                Text(verbatim: "Email: ndohertyjr@gmail.com")
+                Text(verbatim: "Email: myemail@gmail.com")
                     .frame(width: (UIScreen.screenWidth), height: 20.0, alignment: .center)
                     .background(RoundedRectangle(cornerRadius: UIScreen.screenHeight / 5)
                         .fill(Color(
